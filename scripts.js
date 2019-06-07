@@ -51,6 +51,7 @@ function startTimer() {
 }
 
 buttons.forEach(button => button.addEventListener("click", startTimer));
+//if an element has a 'name' attribute, can just say document.[name]
 document.customForm.addEventListener("submit", function(e) {
   e.preventDefault();
   const mins = this.minutes.value;
